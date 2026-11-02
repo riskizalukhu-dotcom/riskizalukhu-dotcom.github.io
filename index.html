@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Riski Syukri Zalukhu — Indonesian Linguist, AI Evaluator &amp; Editor</title>
+<meta name="description" content="Portfolio of Riski Syukri Zalukhu: AI response evaluation, Indonesian translation QA, editing and annotation. Based in Jakarta, working remotely.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4F2EC; --ink:#1C1B19; --muted:#4A4843; --soft:#5B5850;
+    --line:#D9D5CA; --ph:#E2DED4; --ph-ink:#6B675E;
+    --accent:#0F5E5A; --accent-dk:#0A403D;
+    --serif:Fraunces, Georgia, serif; --sans:Inter, system-ui, -apple-system, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent)} a:hover{color:var(--accent-dk)}
+  a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+  .wrap{max-width:1120px;margin:0 auto;padding-left:32px;padding-right:32px}
+  .serif{font-family:var(--serif)}
+
+  header.top{position:sticky;top:0;z-index:10;background:rgba(244,242,236,.92);backdrop-filter:blur(8px);border-bottom:1px solid transparent}
+  header.top .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:20px}
+  .brand{font-family:var(--serif);font-size:22px;font-weight:600;text-decoration:none;color:var(--ink)}
+  nav{display:flex;flex-wrap:wrap;gap:24px;font-size:15px}
+  nav a{text-decoration:none;color:var(--ink)}
+  nav a.cta{color:var(--accent);font-weight:600}
+
+  .hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:56px;align-items:center;padding-top:72px;padding-bottom:96px}
+  .eyebrow{margin:0;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
+  h1{margin:0;font-family:var(--serif);font-weight:400;font-size:64px;line-height:1.05}
+  .lead{margin:0;font-size:19px;line-height:1.6;color:var(--muted);max-width:520px}
+  .stack{display:flex;flex-direction:column;gap:24px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:999px;font-weight:600;text-decoration:none}
+  .btn.solid{background:var(--accent);color:#fff}
+  .btn.solid:hover{background:var(--accent-dk);color:#fff}
+  .btn.ghost{border:1.5px solid var(--ink);color:var(--ink)}
+  .btn.ghost:hover{background:var(--ink);color:var(--paper)}
+  .ph{background:var(--ph);display:flex;align-items:center;justify-content:center;color:var(--ph-ink);font-size:14px;text-align:center;padding:16px}
+  .portrait{aspect-ratio:4/5;border-radius:24px}
+
+  .facts{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .facts .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;padding-top:32px;padding-bottom:32px}
+  .fact b{display:block;font-family:var(--serif);font-weight:400;font-size:34px}
+  .fact span{display:block;margin-top:4px;color:var(--soft);font-size:14px}
+
+  .block{padding-top:96px;padding-bottom:96px}
+  h2{margin:0;font-family:var(--serif);font-weight:400;font-size:44px;line-height:1.1}
+  .grid-work{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;margin-top:40px}
+  .card{display:flex;flex-direction:column;gap:14px}
+  .card .ph{aspect-ratio:4/3;border-radius:16px}
+  .tag{margin:0;font-size:13px;color:var(--accent);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+  .card h3{margin:0;font-family:var(--serif);font-weight:600;font-size:24px;line-height:1.25}
+  .card p.body{margin:0;color:var(--muted);line-height:1.6}
+
+  .dark{background:var(--ink);color:var(--paper)}
+  .grid-svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;margin-top:40px}
+  .svc h3{margin:0 0 10px;font-size:19px}
+  .svc p{margin:0;color:#CFCBC0;line-height:1.6}
+
+  .exp{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px}
+  .exp ol{margin:0;padding:0;list-style:none}
+  .exp li{padding:20px 0;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+  .exp li:last-child{border-bottom:1px solid var(--line)}
+  .exp time{color:var(--soft)}
+
+  .contact{background:var(--accent);color:#fff}
+  .contact .wrap{display:flex;flex-direction:column;gap:24px;align-items:flex-start;padding-top:88px;padding-bottom:88px}
+  .contact h2{font-size:48px;max-width:720px}
+  .btn.light{background:#fff;color:var(--accent)}
+  .btn.light:hover{background:#E6F2F1;color:var(--accent-dk)}
+  .btn.outline-light{border:1.5px solid #fff;color:#fff}
+  .btn.outline-light:hover{background:#fff;color:var(--accent)}
+  .contact small{font-size:14px;color:#CDE5E3}
+
+  @media (max-width:640px){
+    .wrap{padding-left:20px;padding-right:20px}
+    h1{font-size:42px}
+    h2,.contact h2{font-size:34px}
+    .hero{padding-top:40px;padding-bottom:64px;gap:36px}
+    .block{padding-top:64px;padding-bottom:64px}
+    nav{gap:16px;font-size:14px}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Riski S. Zalukhu</a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a class="cta" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap hero">
+    <div class="stack">
+      <p class="eyebrow">Indonesian Linguist · AI Evaluator · Editor</p>
+      <h1>Clear, accurate Indonesian for people and for AI.</h1>
+      <p class="lead">I evaluate AI output, edit Indonesian manuscripts and annotate data. History graduate, peer-reviewed author, based in Jakarta and working remotely.</p>
+      <div class="btns">
+        <a class="btn solid" href="#work">See my work</a>
+        <a class="btn ghost" href="#contact">Contact me</a>
+      </div>
+    </div>
+    <div class="ph portrait" role="img" aria-label="Portrait photo placeholder">[Your portrait photo]</div>
+  </section>
+
+  <section class="facts" aria-label="At a glance">
+    <div class="wrap">
+      <div class="fact"><b>3.81</b><span>GPA, History · Universitas Andalas</span></div>
+      <div class="fact"><b>100+</b><span>Biographies written</span></div>
+      <div class="fact"><b>150 pp</b><span>Manuscript rewritten to academic standard</span></div>
+      <div class="fact"><b>40 h</b><span>Weekly availability, remote</span></div>
+    </div>
+  </section>
+
+  <section id="work" class="wrap block">
+    <h2>Selected work</h2>
+    <div class="grid-work">
+      <article class="card">
+        <div class="ph" role="img" aria-label="Book cover placeholder">[Book cover or spread]</div>
+        <p class="tag">Book editing &amp; design · 2026</p>
+        <h3>Museum book, Lubang Tambang Mbah Soero</h3>
+        <p class="body">Turned an academic manuscript into a magazine-style museum book for Sawahlunto, with colonial-era archival photos from KITLV and Nationaal Archief.</p>
+      </article>
+      <article class="card">
+        <div class="ph" role="img" aria-label="Manuscript sample placeholder">[Manuscript page sample]</div>
+        <p class="tag">Academic editing · 2026</p>
+        <h3>History of earthquakes in Sumatra and Java</h3>
+        <p class="body">Rewriting a 150-page, 12-chapter Indonesian manuscript to academic standards, with source verification ahead of ISBN publication.</p>
+      </article>
+      <article class="card">
+        <div class="ph" role="img" aria-label="Journal page placeholder">[Journal first page]</div>
+        <p class="tag">Peer-reviewed research · 2022</p>
+        <h3>Community resilience on Nias Island</h3>
+        <p class="body">Published in the Environment-Behaviour Proceedings Journal (CSSR2022). <a href="https://scholar.google.com/citations?user=neqkm94AAAAJ">View on Google Scholar</a></p>
+      </article>
+      <article class="card">
+        <div class="ph" role="img" aria-label="Book cover placeholder">[Book cover sample]</div>
+        <p class="tag">Writing · 2021–2022</p>
+        <h3>Biographies, JC Institute</h3>
+        <p class="body">5 autobiographies and 100+ biographies written from interviews and transcripts, plus CSR reports for corporate clients.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="services" class="dark">
+    <div class="wrap block">
+      <h2>What I do</h2>
+      <div class="grid-svc">
+        <div class="svc"><h3>AI response evaluation</h3><p>Rating LLM answers for accuracy, fluency and instruction-following, with written rationales.</p></div>
+        <div class="svc"><h3>Translation quality review</h3><p>Judging English-to-Indonesian output for meaning, register and natural phrasing.</p></div>
+        <div class="svc"><h3>Editing &amp; proofreading</h3><p>Formal Indonesian (EYD/PUEBI) for books, reports and academic texts.</p></div>
+        <div class="svc"><h3>Transcription &amp; annotation</h3><p>Interview transcripts, data labeling and video annotation to detailed guidelines.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="wrap block exp">
+    <h2>Experience</h2>
+    <ol>
+      <li><span><strong>AI Trainer / Response Evaluator</strong> · Outlier</span><time>2026</time></li>
+      <li><span><strong>Freelance Academic Editor</strong> · Self-employed</span><time>2026 – now</time></li>
+      <li><span><strong>Book Editor &amp; Designer</strong> · Museum Mbah Soero</span><time>2026 – now</time></li>
+      <li><span><strong>Museum Curator</strong> · East Nusa Tenggara</span><time>2026 – now</time></li>
+      <li><span><strong>Associate Writer</strong> · JC Institute</span><time>2021 – 2022</time></li>
+      <li><span><strong>Data Support Specialist</strong> · CV BW Pro Data</span><time>2020 – 2021</time></li>
+    </ol>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Need Indonesian you can trust? Let's talk.</h2>
+      <div class="btns">
+        <a class="btn light" href="mailto:riskizalukhu@gmail.com">riskizalukhu@gmail.com</a>
+        <a class="btn outline-light" href="https://linkedin.com/in/riski-syukri-zalukhu">LinkedIn</a>
+        <a class="btn outline-light" href="https://scholar.google.com/citations?user=neqkm94AAAAJ">Google Scholar</a>
+      </div>
+      <small>© 2026 Riski Syukri Zalukhu · Jakarta, Indonesia</small>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
